@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    >
+  <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_tree1"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/img1"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_tree1"
+        />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/img2"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_tree1"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/img3"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_tree1"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="@string/img_change"
+        />
+
+  </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

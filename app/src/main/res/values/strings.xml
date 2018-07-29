@@ -1,0 +1,22 @@
+<resources>
+  <string name="app_name">FirstApp</string>
+
+  <string name="txt_test">hello</string>
+  <string name="btn_click">Click Me!</string>
+  <string name="img_change">Change Image</string>
+
+  <string name="fb">facebook</string>
+  <string name="email">Email</string>
+  <string name="password">Password</string>
+  <string name="show_password">show password</string>
+  <string name="save_login">save login</string>
+  <string name="login">login</string>
+  <string name="cancel">cancel</string>
+
+  <string name="txt_login_btm">Need an account?\nSign in using your phone</string>
+  
+  
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.Design.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+  </style>
+
+  <style name="txt_title">
+    <item name="android:textSize">40sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/lightText</item>
+  </style>
+
+  <style name="txt_login">
+    <item name="android:textColor">@color/lightText</item>
+    <item name="android:layout_marginTop">@dimen/x1</item>
+  </style>
+
+  <style name="edit_txt_login">
+    <item name="android:background">@color/lightText</item>
+    <item name="android:padding">@dimen/x1</item>
+    <item name="android:layout_marginTop">@dimen/x1</item>
+  </style>
+
+
+  <style name="txt_login_btm">
+    <item name="android:textColor">@color/lightText</item>
+    <item name="android:layout_marginBottom">@dimen/x2</item>
+  </style>
+
+
+    <string-array name="list_main">
+      <item>Button Test</item>
+      <item>Image View Test</item>
+      <item>Relative Layout Test</item>
+      <item>Floating Button Test</item>
+      <item>Fragment Test</item>
+      <item>Fragment Communication</item>
+      <item>Tabs</item>
+      <item>Passing Data Parcelable</item>
+      <item>list9</item>
+      <item>list10</item>
+      <item>list11</item>
+      <item>list12</item>
+      <item>list13</item>
+      <item>list14</item>
+      <item>list15</item>
+      <item>list16</item>
+      <item>list17</item>
+      <item>list18</item>
+    </string-array>
+
+</resources>

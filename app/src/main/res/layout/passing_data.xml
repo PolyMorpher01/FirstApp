@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+  <EditText
+      android:id="@+id/txt_Name"
+      android:hint="Name"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/x2"
+      />
+  <EditText
+      android:id="@+id/txt_Age"
+      android:hint="Age"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:inputType="number"
+      android:layout_below="@id/txt_Name"
+      android:layout_margin="@dimen/x2"
+      />
+  <EditText
+      android:id="@+id/txt_address"
+      android:hint="Address"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txt_Age"
+      android:layout_margin="@dimen/x2"
+      />
+
+  <EditText
+      android:id="@+id/txt_course"
+      android:hint="Course"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txt_address"
+      android:layout_margin="@dimen/x2"
+      />
+
+  <Button
+      android:id="@+id/btn_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      android:layout_below="@id/txt_course"
+      android:layout_margin="@dimen/x1"
+      />
+
+</RelativeLayout>
