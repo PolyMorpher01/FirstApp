@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class FragmentA extends Fragment {
 
-  int counter =0;
+  int counter = 0;
 
   FragmentCommunicator fragmentCommunicator;
 
@@ -28,8 +28,11 @@ public class FragmentA extends Fragment {
 
     button.setOnClickListener(view -> {
       counter++;
-      fragmentCommunicator.respond("The Button Was clicked "+counter+" times.");
+      fragmentCommunicator.respond("The Button Was clicked " + counter + " times.");
     });
+  }
 
+  public interface FragmentCommunicator {
+    void respond(String data);
   }
 }

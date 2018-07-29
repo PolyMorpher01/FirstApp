@@ -7,17 +7,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.TextViewHolder> {
 
-  List<String> dataSet;
+  List<String> dataSet = new ArrayList<>();
 
   OnItemClickListener itemClickListener;
   OnItemLongClickListener itemLongClickListener;
 
-  ListAdapter(List<String> myDataSet) {
-    dataSet = myDataSet;
+
+  public void setDataSet(List<String> dataSet){
+    this.dataSet = dataSet;
+    notifyDataSetChanged();
   }
 
   public void setClickListener(OnItemClickListener itemClickListener) {

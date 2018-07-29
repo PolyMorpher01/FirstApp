@@ -10,8 +10,16 @@ import android.widget.TextView;
 
 public class PassingData2Activity extends AppCompatActivity {
 
-  public static Intent getIntent(Context context) {
+  private static final String ARGS_NAME = "name";
+  private static final String ARGS_AGE = "age";
+  private static final String ARGS_STUDENT = "student";
+
+  public static Intent getIntent(Context context, String name, int age,
+      ParcelableDemo parcelableDemo) {
     Intent intent = new Intent(context, PassingData2Activity.class);
+    intent.putExtra(ARGS_NAME, name);
+    intent.putExtra(ARGS_AGE, age);
+    intent.putExtra(ARGS_STUDENT, parcelableDemo);
     return intent;
   }
 
@@ -24,13 +32,21 @@ public class PassingData2Activity extends AppCompatActivity {
 
     Intent intent = getIntent();
     Bundle extras = intent.getExtras();
-    String name = extras.getString("name");
-    String age = intent.getStringExtra("age");
+    String name = getName();
+    int age = intent.getIntExtra(ARGS_AGE, 0);
 
-    ParcelableDemo student = intent.getParcelableExtra("student");
+    ParcelableDemo student = intent.getParcelableExtra(ARGS_STUDENT);
     Log.d("hello", "onCreate: "+student);
 
     textView.setText("Name: " + student.mSName + "\nAge: " + student.mSAge + "\nAddress: "
         + student.mSAddress + "\nCourse: " + student.mSCourse);
+  }
+
+
+  public String getName(){
+    if(getIntent()!=null && getIntent().hasExtra(ARGS_NAME)){
+      return getIntent().getStringExtra(ARGS_NAME);
+    }
+    return "";
   }
 }

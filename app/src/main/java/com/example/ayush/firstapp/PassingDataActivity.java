@@ -34,10 +34,8 @@ public class PassingDataActivity extends AppCompatActivity {
           new ParcelableDemo(name.getText().toString(), age.getText().toString(),
               address.getText().toString(), course.getText().toString());
 
-      Intent intent = PassingData2Activity.getIntent(this);
-      intent.putExtra("name", "joe");
-      intent.putExtra("age", "26");
-      intent.putExtra("student", parcelableDemo);
+      Intent intent = PassingData2Activity.getIntent(this, "Joe", 26, parcelableDemo);
+
 
       startActivity(intent);
     });

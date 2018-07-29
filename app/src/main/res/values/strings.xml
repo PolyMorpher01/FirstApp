@@ -19,4 +19,26 @@
   <string name="drawer_open">Open</string>
   <string name="drawer_close">Close</string>
 
+
+  <string-array name="list_main">
+    <item>Button Test</item>
+    <item>Image View Test</item>
+    <item>Relative Layout Test</item>
+    <item>Floating Button Test</item>
+    <item>Fragment Test</item>
+    <item>Fragment Communication</item>
+    <item>Tabs</item>
+    <item>Passing Data Parcelable</item>
+    <item>list9</item>
+    <item>list10</item>
+    <item>list11</item>
+    <item>list12</item>
+    <item>list13</item>
+    <item>list14</item>
+    <item>list15</item>
+    <item>list16</item>
+    <item>list17</item>
+    <item>list18</item>
+  </string-array>
+
 </resources>

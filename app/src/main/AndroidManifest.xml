@@ -20,7 +20,7 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".MainListActivity"
+        android:name=".mainList.MainListActivity"
         android:label="Main List"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
@@ -29,7 +29,7 @@
         android:label="Button test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden">
-      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainListActivity"/>
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".mainList.MainListActivity"/>
     </activity>
     <activity
         android:name=".ImageViewActivity"
