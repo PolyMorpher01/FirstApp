@@ -20,7 +20,7 @@ public class PassingDataActivity extends AppCompatActivity {
 
     setContentView(R.layout.passing_data);
 
-    TextView btn = findViewById(R.id.btn_next);
+    TextView btn = findViewById(R.id.btn_prev);
     EditText name = findViewById(R.id.txt_Name);
     EditText age = findViewById(R.id.txt_Age);
     EditText address = findViewById(R.id.txt_address);

@@ -12,31 +12,30 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class ButtonActivity extends AppCompatActivity {
+
+  @BindView(R.id.button1) Button button1;
 
   public static Intent getIntent(Context context) {
     return new Intent(context, ButtonActivity.class);
   }
 
-  private Button button1;
+  @OnClick(R.id.button1) void showMessage() {
+    Toast.makeText(ButtonActivity.this,
+        "You clicked a button", Toast.LENGTH_SHORT)
+        .show();
+  }
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
     setContentView(R.layout.buttons);
 
-    button1 = findViewById(R.id.button1);
-
-    button1.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        Toast.makeText(ButtonActivity.this,
-            "You clicked a button", Toast.LENGTH_SHORT)
-            .show();
-      }
-    });
+    ButterKnife.bind(this);
 
     //Toolbar
     Toolbar toolbar = findViewById(R.id.app_bar);

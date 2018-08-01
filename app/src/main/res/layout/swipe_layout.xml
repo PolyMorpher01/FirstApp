@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@android:color/holo_green_dark"
+    >
+
+  <!-- Bottom View Start-->
+  <LinearLayout
+      android:id="@+id/bottom_wrapper"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#66ddff00"
+        >
+
+      <ImageView
+          android:id="@+id/edit_query"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_edit"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#66FF3300"
+        >
+
+      <ImageView
+          android:id="@+id/delete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_delete"
+          />
+    </RelativeLayout>
+
+
+  </LinearLayout>
+  <!-- Bottom View End-->
+
+  <!-- Surface View Start -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:orientation="vertical"
+      android:padding="10dp"
+      >
+
+    <TextView
+        android:id="@+id/list_item_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#f00"
+        android:text="hello there"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+  </LinearLayout>
+  <!-- Surface View End -->
+
+</com.daimajia.swipe.SwipeLayout>

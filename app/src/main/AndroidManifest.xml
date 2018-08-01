@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ayush.firstapp">
 
+  <uses-permission android:name="android.permission.INTERNET"/>
+
   <application
+      android:name=".core.MyApplication"
       android:allowBackup="true"
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
@@ -29,7 +32,9 @@
         android:label="Button test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden">
-      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".mainList.MainListActivity"/>
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".mainList.MainListActivity"/>
     </activity>
     <activity
         android:name=".ImageViewActivity"
@@ -66,14 +71,49 @@
         android:label="Tabs"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
-    <activity android:name=".PassingDataActivity"
+    <activity
+        android:name=".PassingDataActivity"
         android:label="Passing data test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
-    <activity android:name=".PassingData2Activity"
+    <activity
+        android:name=".PassingData2Activity"
         android:label="Passing data test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".LogTestActivity"
+        android:label="Log test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".SharedPreferencesActivity"
+        android:label="Shared pref"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".SharedPreferences2Activity"
+        android:label="Shared pref 2"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".SwipeLayoutTestActivity"
+        android:label="Swipe test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+
+    <activity
+        android:name=".EventBusTestActivity"
+        android:label="Event bus test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+
+    <activity
+        android:name=".EventBusTest2Activity"
+        android:label="Event bus test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+
   </application>
 
 </manifest>

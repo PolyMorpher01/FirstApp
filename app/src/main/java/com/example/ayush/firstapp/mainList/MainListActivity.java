@@ -114,6 +114,22 @@ public class MainListActivity extends BaseActivity
         navigator.navigatePassingDataActivity(this);
         break;
 
+      case "Log Test":
+        navigator.navigateLogTestActivity(this);
+        break;
+
+      case "Shared Preferences":
+        navigator.navigateSharedPreferencesActivity(this);
+        break;
+
+      case "Swipe Layout Test":
+        navigator.navigateSwipeLayoutTestActivity(this);
+        break;
+
+      case "Event Bus Test":
+        navigator.navigateEventBus2Activity(this);
+        break;
+
       default:
         Toast.makeText(this, data, Toast.LENGTH_SHORT).show();
     }

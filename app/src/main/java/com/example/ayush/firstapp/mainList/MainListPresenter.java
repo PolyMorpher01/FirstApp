@@ -10,16 +10,15 @@ public class MainListPresenter implements MainListContract.Presenter {
   final Context context;
   MainListContract.View mainView;
 
-  @Override public void setMainView(MainListContract.View mainView) {
-    this.mainView = mainView;
-  }
-
-
   public MainListPresenter(Context context) {
     this.context = context;
   }
 
-  @Override public void getItem(){
+  @Override public void setMainView(MainListContract.View mainView) {
+    this.mainView = mainView;
+  }
+
+  @Override public void getItem() {
     List<String> items = Arrays.asList(context.getResources().getStringArray(R.array.list_main));
     mainView.populateList(items);
   }

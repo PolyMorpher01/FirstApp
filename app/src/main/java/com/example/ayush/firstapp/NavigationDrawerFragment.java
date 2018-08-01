@@ -30,13 +30,13 @@ public class NavigationDrawerFragment extends Fragment {
 
   @Override public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    mUserLearnedDrawer =
+   /* mUserLearnedDrawer =
         Boolean.parseBoolean(
             readFramPreferences(getActivity(), KEY_USER_LEARNED_DRAWABLE, "false"));
 
     if (savedInstanceState != null) {
       mFromSavedInstanceState = true;
-    }
+    }*/
   }
 
   @Override
@@ -60,11 +60,11 @@ public class NavigationDrawerFragment extends Fragment {
           @Override public void onDrawerOpened(View drawerView) {
             super.onDrawerOpened(drawerView);
 
-            if (!mUserLearnedDrawer) {
+           /* if (!mUserLearnedDrawer) {
               mUserLearnedDrawer = true;
               saveToPreferences(getActivity(), KEY_USER_LEARNED_DRAWABLE,
                   String.valueOf(mUserLearnedDrawer));
-            }
+            }*/
 
             getActivity().invalidateOptionsMenu();
           }
@@ -82,10 +82,10 @@ public class NavigationDrawerFragment extends Fragment {
             }
           }*/
         };
-
+/*
     if (!mUserLearnedDrawer && !mFromSavedInstanceState) {
       drawerLayout.openDrawer(containerView);
-    }
+    }*/
 
     drawerLayout.addDrawerListener(drawerToggle);
     drawerLayout.post(() -> drawerToggle.syncState());

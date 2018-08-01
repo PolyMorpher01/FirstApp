@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,11 +34,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.TextViewHolder
   }
 
   static class TextViewHolder extends RecyclerView.ViewHolder {
-    TextView textView;
+    @BindView(R.id.list_item_text) TextView textView;
 
     TextViewHolder(View itemView) {
       super(itemView);
-      textView = itemView.findViewById(R.id.list_item_text);
+      ButterKnife.bind(this, itemView);
     }
   }
 
