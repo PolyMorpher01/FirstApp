@@ -33,11 +33,19 @@
     <item>Shared Preferences</item>
     <item>Swipe Layout Test</item>
     <item>Event Bus Test</item>
-    <item>list13</item>
-    <item>list14</item>
-    <item>list15</item>
-    <item>list16</item>
-    <item>list17</item>
+    <item>Http Test</item>
+    <item>RetroFit Test</item>
+    <item>Service Test</item>
+    <item>BroadCastReceiver Test</item>
+    <item>Recycler state test</item>
+    <item>Realm Test</item>
+    <item>Rx Test</item>
+    <item>Custom View Test</item>
+    <item>Compound View Test</item>
+    <item>Custom View group</item>
+    <item>Dagger Test</item>
+    <item>Constraint Layout Test</item>
+    <item>list18</item>
     <item>list18</item>
   </string-array>
 

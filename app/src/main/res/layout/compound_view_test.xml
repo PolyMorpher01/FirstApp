@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:scrollbars="horizontal"
+      android:paddingStart="@dimen/x2"
+      >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x2"
+        android:orientation="horizontal"
+        >
+      <com.example.ayush.firstapp.customViews.CompoundView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:text="meme1"
+          app:image="@drawable/meme1"
+          />
+      <com.example.ayush.firstapp.customViews.CompoundView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:text="meme2"
+          app:image="@drawable/meme2"
+          />
+      <com.example.ayush.firstapp.customViews.CompoundView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:text="meme3"
+          app:image="@drawable/meme3"
+          />
+      <com.example.ayush.firstapp.customViews.CompoundView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:text="meme4"
+          app:image="@drawable/meme4"
+          />
+    </LinearLayout>
+  </HorizontalScrollView>
+
+</RelativeLayout>

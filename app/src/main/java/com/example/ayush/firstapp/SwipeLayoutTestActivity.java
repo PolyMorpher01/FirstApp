@@ -35,8 +35,9 @@ public class SwipeLayoutTestActivity extends AppCompatActivity {
     List<String> items = Arrays.asList(getResources().getStringArray(R.array.list_main));
 
     adapter = new SwipeLayoutListAdapter(this);
-    recyclerView.setAdapter(adapter);
     adapter.setDataSet(items);
+    recyclerView.setAdapter(adapter);
+
   }
 
   private void initRecycler() {

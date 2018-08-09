@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/x2">
+
+  <EditText
+      android:id="@+id/txt_task"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="add new task"
+      />
+  <CheckBox
+      android:id="@+id/chk_isComplete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txt_task"
+      android:text="completed"
+      />
+  <Button
+      android:id="@+id/btn_insert"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="insert"
+      android:layout_below="@id/chk_isComplete"
+      />
+  <Button
+      android:id="@+id/btn_fetch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="fetch"
+      android:layout_toEndOf="@id/btn_insert"
+      android:layout_below="@id/chk_isComplete"
+      />
+
+  <TextView
+      android:id="@+id/fetched_data"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="fetched data"
+      android:layout_below="@id/btn_insert"
+      android:layout_marginTop="@dimen/x3"
+      android:layout_margin="@dimen/x2"
+      />
+
+</RelativeLayout>

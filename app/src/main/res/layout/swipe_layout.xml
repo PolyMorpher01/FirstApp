@@ -4,59 +4,50 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
-    android:background="@android:color/holo_green_dark"
     >
+
 
   <!-- Bottom View Start-->
   <LinearLayout
       android:id="@+id/bottom_wrapper"
       android:layout_width="100dp"
       android:layout_height="match_parent"
-      android:layout_gravity="start"
       android:orientation="horizontal"
+      android:background="@android:color/darker_gray"
       >
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#66ddff00"
-        >
 
-      <ImageView
-          android:id="@+id/edit_query"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_centerInParent="true"
-          android:src="@drawable/ic_edit"
-          />
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/edit_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_edit"
+        android:padding="@dimen/x1"
+        android:layout_marginEnd="@dimen/x1"
+        android:background="@android:color/holo_blue_light"
+        />
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#66FF3300"
-        >
 
-      <ImageView
-          android:id="@+id/delete"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_centerInParent="true"
-          android:src="@drawable/ic_delete"
-          />
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_delete"
+        android:background="@android:color/holo_red_light"
+        android:padding="@dimen/x1"
+        />
 
 
   </LinearLayout>
+
   <!-- Bottom View End-->
 
   <!-- Surface View Start -->
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="#ffffff"
       android:orientation="vertical"
       android:padding="10dp"
       >
@@ -66,10 +57,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="#f00"
         android:text="hello there"
         android:textColor="@android:color/black"
-        android:textSize="12sp"/>
+        android:textSize="12sp"
+        />
   </LinearLayout>
   <!-- Surface View End -->
 

@@ -13,7 +13,19 @@ import android.widget.Toast;
 import com.example.ayush.firstapp.ListAdapter;
 import com.example.ayush.firstapp.NavigationDrawerFragment;
 import com.example.ayush.firstapp.R;
+import com.example.ayush.firstapp.broadCastReceiverTest.BroadcastReceiverTest;
+import com.example.ayush.firstapp.constraintLayoutTest.ConstraintLayoutTestActivity;
 import com.example.ayush.firstapp.core.BaseActivity;
+import com.example.ayush.firstapp.customViews.CompoundViewActivity;
+import com.example.ayush.firstapp.customViews.CustomViewActivity;
+import com.example.ayush.firstapp.customViews.CustomViewGroupActivity;
+import com.example.ayush.firstapp.daggerTest.DaggerTestActivity;
+import com.example.ayush.firstapp.httpUrlConnectionTest.HttpTestActivity;
+import com.example.ayush.firstapp.recyclerStateTest.RecyclerStateTestActivity;
+import com.example.ayush.firstapp.relmTest.model.RealmTestActivity;
+import com.example.ayush.firstapp.retroFitTest.RetroFitTestActivity;
+import com.example.ayush.firstapp.rxTest.RxTest;
+import com.example.ayush.firstapp.serviceTest.ServiceTestActivity;
 import java.util.List;
 
 public class MainListActivity extends BaseActivity
@@ -128,6 +140,54 @@ public class MainListActivity extends BaseActivity
 
       case "Event Bus Test":
         navigator.navigateEventBus2Activity(this);
+        break;
+
+      case "Http Test":
+        startActivity(HttpTestActivity.getIntent(this));
+        break;
+
+      case "RetroFit Test":
+        startActivity(RetroFitTestActivity.getIntent(this));
+        break;
+
+      case "Service Test":
+        startActivity(ServiceTestActivity.getIntent(this));
+        break;
+
+      case "BroadCastReceiver Test":
+        startActivity(BroadcastReceiverTest.getIntent(this));
+        break;
+
+      case "Recycler state test":
+        startActivity(RecyclerStateTestActivity.getIntent(this));
+        break;
+
+      case "Realm Test":
+        startActivity(RealmTestActivity.getIntent(this));
+        break;
+
+      case "Rx Test":
+        startActivity(RxTest.getIntent(this));
+        break;
+
+      case "Custom View Test":
+        startActivity(CustomViewActivity.getIntent(this));
+        break;
+
+      case "Compound View Test":
+        startActivity(CompoundViewActivity.getIntent(this));
+        break;
+
+      case "Custom View group":
+        startActivity(CustomViewGroupActivity.getIntent(this));
+        break;
+
+      case "Dagger Test":
+        startActivity(DaggerTestActivity.getIntent(this));
+        break;
+
+      case "Constraint Layout Test":
+        startActivity(ConstraintLayoutTestActivity.getIntent(this));
         break;
 
       default:

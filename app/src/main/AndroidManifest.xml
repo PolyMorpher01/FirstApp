@@ -12,6 +12,16 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
+
+    <service
+        android:name=".serviceTest.MyService"
+        android:label="music service"/>
+    <receiver android:name=".broadCastReceiverTest.Receiver">
+      <intent-filter>
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+      </intent-filter>
+    </receiver>
+
     <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
@@ -107,10 +117,65 @@
         android:label="Event bus test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
-
     <activity
         android:name=".EventBusTest2Activity"
         android:label="Event bus test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".httpUrlConnectionTest.HttpTestActivity"
+        android:label="Http Connection test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".retroFitTest.RetroFitTestActivity"
+        android:label="Http Connection test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"
+        />
+    <activity
+        android:name=".serviceTest.ServiceTestActivity"
+        android:label="Service test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".broadCastReceiverTest.BroadcastReceiverTest"
+        android:label="BroadCastReceiver test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".recyclerStateTest.RecyclerStateTestActivity"
+        android:label="Recycler state test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".relmTest.model.RealmTestActivity"
+        android:label="Realm test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".rxTest.RxTest"
+        android:label="Rx test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".customViews.CustomViewActivity"
+        android:label="Custom View test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".customViews.CompoundViewActivity"
+        android:label="Compound view test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".customViews.CustomViewGroupActivity"
+        android:label="Custom view group test"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden"/>
+    <activity
+        android:name=".daggerTest.DaggerTestActivity"
+        android:label="Dagger test"
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateHidden"/>
 
