@@ -14,8 +14,8 @@
   <string name="cancel">cancel</string>
 
   <string name="txt_login_btm">Need an account?\nSign in using your phone</string>
-  
-  
+
+
   <string name="drawer_open">Open</string>
   <string name="drawer_close">Close</string>
 
@@ -45,8 +45,9 @@
     <item>Custom View group</item>
     <item>Dagger Test</item>
     <item>Constraint Layout Test</item>
-    <item>list18</item>
+    <item>Crash Test</item>
     <item>list18</item>
   </string-array>
+  <string name="title_activity_maps">Map</string>
 
 </resources>

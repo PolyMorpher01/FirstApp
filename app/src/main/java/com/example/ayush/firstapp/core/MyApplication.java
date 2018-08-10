@@ -1,6 +1,8 @@
 package com.example.ayush.firstapp.core;
 
-import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 import com.example.ayush.firstapp.BuildConfig;
 import com.example.ayush.firstapp.relmTest.model.MyModule;
 import com.example.ayush.firstapp.timber.DebugLogTree;
@@ -12,7 +14,7 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import timber.log.Timber;
 
-public class MyApplication extends Application {
+public class MyApplication extends MultiDexApplication {
   @Override public void onCreate() {
     super.onCreate();
 
@@ -43,6 +45,10 @@ public class MyApplication extends Application {
             .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
             .enableWebKitInspector(RealmInspectorModulesProvider.builder(this).build())
             .build());
+  }
 
+  @Override protected void attachBaseContext(Context base) {
+    super.attachBaseContext(base);
+    MultiDex.install(this);
   }
 }
