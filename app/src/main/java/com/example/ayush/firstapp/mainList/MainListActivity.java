@@ -23,7 +23,7 @@ import com.example.ayush.firstapp.customViews.CustomViewGroupActivity;
 import com.example.ayush.firstapp.daggerTest.DaggerTestActivity;
 import com.example.ayush.firstapp.httpUrlConnectionTest.HttpTestActivity;
 import com.example.ayush.firstapp.locationTest.LocationTestActivity;
-import com.example.ayush.firstapp.locationTest.MapsActivity;
+//import com.example.ayush.firstapp.locationTest.MapsActivity;
 import com.example.ayush.firstapp.recyclerStateTest.RecyclerStateTestActivity;
 import com.example.ayush.firstapp.relmTest.model.RealmTestActivity;
 import com.example.ayush.firstapp.retroFitTest.RetroFitTestActivity;
